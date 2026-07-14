@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#07070f] text-[#eaeaff] antialiased;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
+  }
+  .bg-gradient-main {
+    @apply bg-gradient-to-br from-[#130b2a] via-[#07070f] to-[#00101f];
+  }
+  .neon-glow {
+    @apply shadow-[0_0_20px_rgba(0,229,255,0.25)] hover:shadow-[0_0_35px_rgba(0,229,255,0.45)];
+  }
+  .card-hover {
+    @apply transition-transform duration-300 hover:-translate-y-2 hover:scale-[1.01];
+  }
+}
+
+/* Scrollbar tùy chỉnh */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e1a;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00e5ff, #a855f7);
+  border-radius: 12px;
+}
