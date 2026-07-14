@@ -1,0 +1,11 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['images.unsplash.com', 'lh3.googleusercontent.com'],
+  },
+  experimental: {
+    // Có thể thêm cấu hình nếu cần
+  },
+};
+
+module.exports = nextConfig;
